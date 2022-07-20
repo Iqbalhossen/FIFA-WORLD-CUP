@@ -1,0 +1,399 @@
+/*-------- Google Fonts Link  ----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+main{
+    padding: 0px 45px;
+}
+
+/*----------------- Header Area start ------------------*/
+header{
+    background-color: #161616;
+    min-height: 535px;
+    border-radius: 30px;
+    padding: 0 50px;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.banner-content{
+    width: 46%;
+    padding: 30px 30px 0px 0px;
+}
+.banner-content h1{
+    color: #ffff;
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+.banner-content p{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 40px;
+}
+
+.banner-content a{
+    color: #FFFFFF;
+    background-color: #DD0000;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+
+
+.banner-image{
+    width: 53%;
+    padding-top: 30px;
+    margin-bottom: -7px;
+}
+
+.banner-image img{
+    width: 100%;
+}
+
+/*----------------- Header Area End ------------------*/
+
+.blog{
+    display: flex;
+}
+.blog-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 21%;
+    height: 220px;
+    padding-top: 20px;
+    margin-right: 1%;
+    border-radius: 10px;
+    background-color: #161616;
+}
+
+.blog-btn a{
+    color: #000000;
+    width: 190px;
+    height: 35px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding-top: 10px;
+}
+#btn-background{
+    color: #FFFFFF;
+    background-color: #DD0000;
+}
+.blogs{
+    width: 78%;
+    display: grid;   
+    grid-template-columns: repeat(3 ,1fr);
+    gap:10px;
+}
+.blog-items{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.blog-items img{
+    width: 100%;
+}
+.blog-items article{
+    padding: 20px;
+}
+
+.blog-items small{
+    padding: 5px 15px;
+    color: #161616;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #161616;
+    border-radius: 10px;
+}
+
+.blog-items h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #161616;
+}
+.blog-items h3:hover{
+    color: #DD0000;
+}
+.blog-items span{
+    font-size:16px ;
+    font-weight: 400;
+    color: #161616;
+    margin-right: 25px;
+}
+.blog-items i{
+    margin-right: 10px;
+}
+
+.match-btn{
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+.match-btn a{
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #DD0000;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 45px;
+    display: inline-block;
+}
+.match-btn a:hover{
+  background-color: #940c0c;
+}
+
+.footer-items{
+    background-color: #161616;
+    padding: 50px 0;
+    margin-top: 50px;
+    text-align: center;
+}
+.footer-items h2{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+}
+.footer-items hr{
+    width: 80%;
+    color: #FFFFFF;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.link a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #B9B9B9;
+    margin-right: 25px;
+}
+.link a:hover{
+    color: #FFFFFF;
+}
+
+
+
+.matchs{
+    width: 78%;
+    display: grid;   
+    grid-template-columns: repeat(3 ,1fr);
+    gap:10px;
+}
+
+
+.matchs-items{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.country-image img{
+    display: inline;
+    width: 40%;
+}
+.country-image h5{
+    font-size: 16px;
+    font-weight: bold;
+    display: inline;
+    padding: 0 10px;
+    margin-top: 1000px;
+}
+.country-name h3{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 0 2px 0;
+}
+
+.country-name small{
+    color: #4D4D4D;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+/*-------------------------- Responsive Code  ---------------------*/
+
+
+/* mobile view */
+@media only screen and (max-width: 767px) {
+    
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-content{
+        width: 80%;
+        margin: auto;
+    }
+    .banner-content h1{
+        color: #ffff;
+        font-size: 34px;
+        line-height: 40px;
+        font-weight: bold;
+    }
+    .banner-image{
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .blog{
+        flex-direction: column;
+    }
+    .blog-btn{
+        align-items: center;
+        width: 100%;
+        height: 220px;
+        padding-top: 20px;
+        margin-right: 0%;
+        border-radius: 10px;
+        background-color: #ffffff;
+    }
+    
+    .blog-btn a{
+        font-size: 16px;
+        font-weight: 600;
+        color: #000000;
+        width: auto;
+        height: auto;
+        text-align: center;
+        background-color: #ffffff;
+        border: 1px solid red;
+        border-radius: 10px;
+        margin: 10px 0;
+        padding: 10px 20px;
+    }
+
+    .blogs{
+        width: 100%;
+        display: grid;   
+        grid-template-columns: repeat(1 ,1fr);
+        gap:10px;
+    }
+
+
+    /* Match Area Start */
+    .matchs{
+        width: 100%;
+        display: grid;   
+        grid-template-columns: repeat(1 ,1fr);
+        gap:10px;
+    }
+    .match-btn{
+        display: block;
+    }
+    /* match Area End  */
+
+    .link a{
+        display: block;
+        padding: 10px 0;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+  /*---------- Tablet Mobile Responsive ---------------*/
+
+
+
+
+  @media only screen and (min-width: 768px) and (max-width:992px){
+    header{
+        padding: 0 15px 0 50px;
+        min-height: 455px;
+    }
+    .banner-content{
+        width: 50%;
+    }
+    .banner-content h1{
+        font-size: 55px;
+        line-height: 60px;
+    }
+    
+    .banner-content p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+
+     .blog{
+        flex-direction: column;
+    }
+
+
+    .blog-btn{
+        flex-direction: row;;
+        width: 100%;
+        margin-right: 0%;
+        background-color: #ffffff;
+        margin: auto;
+    }
+    
+    .blog-btn a{
+        width: 270px;
+        height: 40px;
+        background-color: #ffffff;
+        border: 1px solid #E8E8E8;
+        margin: 0 15px;
+        padding-top: 15px;
+        
+    }
+
+    .blogs{
+        width: 100%;
+        display: grid;   
+        grid-template-columns: repeat(2 ,1fr);
+        gap:10px;
+    }
+    .match-btn{
+        display: block;
+    }
+   
+   .link{
+    width: 75%;
+    margin: auto;
+   }
+   .link a{
+    font-size: 20px;
+    margin-right: 30px;
+    line-height: 70px;
+   }
+    
+   /* Match Area Start */
+   .matchs{
+    width: 100%;
+    display: grid;   
+    grid-template-columns: repeat(2 ,1fr);
+    gap:10px;
+}
+/* match Area End  */
+
+  } 
